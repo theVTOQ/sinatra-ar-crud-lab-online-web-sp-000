@@ -43,7 +43,7 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/articles/:id' do
-    @article.title = params[:title].split.map(&:capitalize).join(' ')
+    @article.title = "hello"
     @article.content = params[:content]
     @article.save
 
