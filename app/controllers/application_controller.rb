@@ -45,7 +45,7 @@ class ApplicationController < Sinatra::Base
   patch '/articles/:id' do
     @article.title = params[:title].split.map(&:capitalize).join(' ')
     @article.content = params[:content]
-    @article.save
+    #@article.save
 
     erb :show
   end
